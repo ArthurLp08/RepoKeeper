@@ -1,16 +1,95 @@
-# React + Vite
+# 📦  Armazenador de Repositorios do Github
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto feito no curso "Aprenda a criar sites e sistemas web com NextJS do extremo ZERO com projetos reais" (Matheus Fraga)
 
-Currently, two official plugins are available:
+# 🚀 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔎 Buscar repositórios pelo formato usuario/repositorio
 
-## React Compiler
+💾 Salvar repositórios localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📄 Visualizar detalhes completos do projeto
 
-## Expanding the ESLint configuration
+🐞 Acompanhar as issues abertas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❌ Remover repositórios da sua lista
+
+# 🛠️ Tecnologias Utilizadas
+
+⚛️ React
+
+⚡ Vite
+
+🎨 CSS / Styled Components
+
+🌐 API pública do GitHub
+
+# 📸 Funcionalidades
+
+## 🔍 Adicionar Repositório
+
+Insira no formato:
+
+`facebook/react`
+
+O sistema busca os dados na API do GitHub.
+
+Caso exista, o repositório é salvo na lista.
+
+##  📂 Visualizar Detalhes
+
+Ao clicar em um repositório salvo, você pode visualizar:
+
+Nome
+
+Descrição
+
+Linguagem principal
+
+Número de estrelas
+
+Número de forks
+
+Número de issues abertas
+
+## 🐛 Visualizar Issues
+
+Lista de issues abertas
+
+Título
+
+Autor
+
+Link direto para a issue no GitHub
+
+# ⚙️ Como Rodar o Projeto
+
+1️⃣ Clone o repositório 
+`
+git clone https://github.com/ArthurLp08/repokeeper
+`
+
+2️⃣ Acesse a pasta
+`
+cd repokeeper
+`
+
+3️⃣ Instale as dependências
+`
+npm install
+`
+
+4️⃣ Execute o projeto
+`
+npm run dev
+`
+
+O projeto estará disponível em:
+
+http://localhost:5173
+
+# 🌐 API Utilizada
+
+A aplicação consome dados da API pública do GitHub:
+
+https://api.github.com/repos/{owner}/{repo}
