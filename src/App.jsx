@@ -1,11 +1,16 @@
-import { useState } from 'react'
+
+import Rotas from './routes'
+
+import GlobalStyle from './styles/global'
 
 function App() {
 
   return (
-    <div>
-      <h1>Projeto</h1>
-    </div>
+    <>
+    <GlobalStyle/>
+    <Rotas />
+    </>
+
   )
 }
 
