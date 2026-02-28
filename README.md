@@ -1,6 +1,6 @@
 # 📦  Armazenador de Repositorios do Github
 
-Projeto feito no curso Aprenda a criar sites e sistemas web com NextJS do extremo ZERO com projetos reais. (Matheus Fraga)
+Projeto feito no curso "Aprenda a criar sites e sistemas web com NextJS do extremo ZERO com projetos reais" (Matheus Fraga)
 
 # 🚀 Sobre o Projeto
 
