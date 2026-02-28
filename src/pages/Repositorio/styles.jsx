@@ -9,7 +9,10 @@ export const Container = styled.div`
     box-shadow: 0 0 20px rgba(0, 0,0, 0.2);
     padding: 30px;
     margin: 80px auto;
-
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
 
 `;
 
@@ -20,7 +23,7 @@ align-items: center;
 
 img{
     width: 150px;
-    border-radius: 20%;
+    border-radius: 100%;
     margin: 20px 0;
 }
 
@@ -55,5 +58,89 @@ export const BackButton = styled(Link)`
     outline: 0;
     background: transparent;
 
+
+`;
+
+
+export const IssuesList = styled.ul`
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #0D2636;
+    list-style: none;
+
+    li{
+        display: flex;
+        padding: 15px 10px;
+
+        & + li{
+            border-top: 1px solid #DDD;
+        }
+
+        img{
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+        }
+
+        div{
+            flex: 1;
+            margin-left: 12px;
+
+            p{
+                margin-top: 10px;
+                font-size: 12px;
+                color: #000;
+            }
+
+            strong{
+                font-size: 15px;
+
+                a{
+                    text-decoration: none;
+                    color: #222;
+                    transition: 0.3s;
+
+                    &:hover{
+                        color: #0071db;
+                    }
+                }
+                span{
+                    background: #222;
+                    color: #FFF;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 4px 7px;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+
+
+
+`;
+
+export const PageActions = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 8px;
+
+    button{
+        outline: 0;
+        border: 0;
+        background: #222;
+        color: #FFF;
+        padding: 5px 10px;
+        border-radius: 4px;
+
+        &:disabled{
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
 
 `;
